@@ -170,7 +170,7 @@ setup(
     zip_safe=False,
     classifiers=CLASSIFIERS,
     scripts=[
-        'az',
+        #'az',
         'az.completion.sh',
         'az.bat',
     ],
