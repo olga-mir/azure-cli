@@ -6,6 +6,7 @@ Release History
 
 * Add `--workspace-resource-id` flag to allow creation of Azure Red Hat Openshift cluster with monitoring
 * Add `monitor_profile` to create Azure Red Hat OpenShift cluster with monitoring
+* Add `monitor` subgroup to control Log Analytics monitoring in Azure Red Hat OpensShift cluster
 
 **AKS**
 

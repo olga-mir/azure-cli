@@ -928,6 +928,30 @@ type: command
 short-summary: List managed OpenShift clusters.
 """
 
+helps['openshift monitor'] = """
+type: group
+short-summary: Commands to control Log Analytics monitoring. Requires "--workspace-resource-id".
+"""
+
+helps['openshift monitor enable'] = """
+type: command
+short-summary: Turn on Log Analytics monitoring. Requires "--workspace-resource-id".
+parameters:
+  - name: --workspace-resource-id
+    type: string
+    short-summary: The resource ID of an existing Log Analytics Workspace to use for storing monitoring data.
+examples:
+  - name: Enable Log Analytics in a managed OpenShift cluster.
+    text: |-
+        az openshift monitor enable -g MyResourceGroup -n MyManagedCluster --workspace-resource-id /subscriptions/0000000-0000-0000-0000-000000000000/resourcegroups/MyOmsRg/providers/microsoft.operationalinsights/workspaces/MyOmsWorkspaceName
+
+"""
+
+helps['openshift monitor disable'] = """
+type: command
+short-summary: Turn off Log Analytics monitoring.
+"""
+
 helps['openshift scale'] = """
 type: command
 short-summary: Scale the compute pool in a managed OpenShift cluster.
